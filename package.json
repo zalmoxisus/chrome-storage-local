@@ -1,0 +1,19 @@
+{
+  "name": "chrome-storage-local",
+  "version": "0.1.1",
+  "description": "Use the same api for chrome.storage.local as for localStorage.",
+  "main": "storage.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zalmoxisus/chrome-storage-local.git"
+  },
+  "homepage": "https://github.com/zalmoxisus/chrome-storage-local",
+  "keywords": [
+    "chrome storage",
+    "localStorage",
+    "chrome",
+    "firefox"
+  ],
+  "author": "Mihail Diordiev <zalmoxisus@gmail.com>",
+  "license": "MIT"
+}
