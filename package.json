@@ -3,6 +3,7 @@
   "version": "0.1.1",
   "description": "Use the same api for chrome.storage.local as for localStorage.",
   "main": "storage.js",
+  "files": ["storage.js"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zalmoxisus/chrome-storage-local.git"
