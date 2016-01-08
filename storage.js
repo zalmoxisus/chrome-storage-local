@@ -15,7 +15,7 @@ storage.setItem = function(key, value, callback) {
   });
 };
 
-storage.removeItem = storage.remove;
+storage.removeItem = chrome.storage.local.remove;
 
 storage.getAllKeys = function(callback) {
   chrome.storage.local.get(null, function(obj) {
