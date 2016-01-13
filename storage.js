@@ -1,7 +1,7 @@
 var storage;
 
 if (typeof chrome !== 'undefined' && chrome.storage && chrome.storage.local) {
-  storage = {};
+  storage = { isChromeStorage: true };
 
   storage.getItem = function (key, callback) {
     chrome.storage.local.get(key, function (obj) {
