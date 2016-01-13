@@ -18,8 +18,10 @@ if (typeof chrome !== 'undefined' && chrome.storage && chrome.storage.local) {
     });
   };
 
-  storage.removeItem = chrome.storage.local.remove;
-
+  storage.removeItem = function(key) {
+    chrome.storage.local.remove(key);
+  };
+  
   storage.getAllKeys = function (callback) {
     chrome.storage.local.get(null, function (obj) {
       callback(null, Object.keys(obj));
