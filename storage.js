@@ -14,7 +14,7 @@ if (typeof chrome !== 'undefined' && chrome.storage && chrome.storage.local) {
     var obj = {};
     obj[key] = value;
     chrome.storage.local.set(obj, function () {
-      if (chrome.runtime.lastError) callback(key);
+      if (callback && chrome.runtime.lastError) callback(key);
     });
   };
 
