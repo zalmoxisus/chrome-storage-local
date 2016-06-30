@@ -28,6 +28,6 @@ if (typeof chrome !== 'undefined' && chrome.storage && chrome.storage.local) {
     });
   };
 }
-else storage = localStorage; 
+else storage = window.localStorage; 
 
 module.exports = storage;
