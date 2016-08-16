@@ -1,6 +1,6 @@
 {
   "name": "chrome-storage-local",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Use the same api for chrome.storage.local as for localStorage.",
   "main": "storage.js",
   "files": ["storage.js"],
