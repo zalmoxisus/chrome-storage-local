@@ -1,5 +1,20 @@
 var storage;
 
+function noop() {}
+
+function getStorage() {
+  try {
+    return window.localStorage;
+  } catch(e) {
+    return {
+      getItem: noop,
+      setItem: noop,
+      removeItem: noop,
+      getAllKeys: noop
+    };
+  }
+}
+
 if (typeof chrome !== 'undefined' && chrome.storage && chrome.storage.local) {
   storage = { isChromeStorage: true };
 
@@ -28,6 +43,6 @@ if (typeof chrome !== 'undefined' && chrome.storage && chrome.storage.local) {
     });
   };
 }
-else storage = window.localStorage; 
+else storage = getStorage(); 
 
 module.exports = storage;
